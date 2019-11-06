@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="./static/head_login.ico">
+    <title>自友行</title>
+    <style>
+      body{
+        font-family: 'PingFangSC-Light',Arial,Helvetica,sans-serif,"Hiragino Sans GB";
+      }
+    </style>
+    <script>
+        function setRootFontSize() {
+          /*获取屏幕的宽度*/
+          let width = document.documentElement.clientWidth || document.body.clientWidth
+          /*屏幕小于414px会改变基础像素，大于等于414px的屏幕基础像素为13px不变*/
+          if (width > 200) {
+            document.documentElement.style.fontSize = width / 375 * 13 + 'px'
+          }else {
+            document.documentElement.style.fontSize = '13px'
+          }
+        }
+        setRootFontSize()
+        window.addEventListener('resize', function () {
+          setRootFontSize()
+        }, false)
+    </script>
+    
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+
+</html>
